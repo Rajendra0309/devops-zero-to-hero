@@ -6,3 +6,9 @@
 - Practiced Linux networking basics for service and connectivity troubleshooting
 - Explored package management using dnf (Fedora) and pacman (Arch Linux)
 - Worked with environment variables commonly used in DevOps and CI/CD workflows
+
+## Day 2
+- Learned Linux service management using systemd
+- Practiced managing services with systemctl
+- Analyzed logs using journalctl
+- Documented structured troubleshooting methodology
