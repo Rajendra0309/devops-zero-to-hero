@@ -111,7 +111,7 @@ pacman -Ss htop
 pacman -Qi htop
 ```
 
-## environment Variables
+## Environment Variables
 ```bash
 echo $PATH
 printenv HOME
