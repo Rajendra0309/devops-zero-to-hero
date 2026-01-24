@@ -12,3 +12,6 @@
 - Practiced managing services with systemctl
 - Analyzed logs using journalctl
 - Documented structured troubleshooting methodology
+- Inspected listening ports and active services
+- Practiced identifying processes bound to network ports
+- Examined firewall configuration for connectivity troubleshooting

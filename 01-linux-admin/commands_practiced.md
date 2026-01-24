@@ -73,3 +73,42 @@ pkill -15 nginx
 pkill -9 python
 pkill -HUP sshd
 ```
+
+## Network Ports and Services
+
+```bash
+ss -tl
+ss -ul
+ss -tuln
+ss -tulpn
+ss -tulpn | head
+ss -tulpn | grep ssh
+lsof -i
+lsof -i :22
+lsof -i :80
+lsof -iTCP
+lsof -iUDP
+lsof -iTCP -sTCP:LISTEN
+lsof -iTCP -sTCP:ESTABLISHED
+lsof -iTCP:22 -sTCP:LISTEN
+lsof -i | grep nginx
+```
+
+## Firewall Management
+
+```bash
+# NOTE: The following firewall modification commands were tested only in a controlled local environment for learning purposes. 
+# Production environments require change approval and validation.
+sudo firewall-cmd --state
+sudo firewall-cmd --get-active-zones
+sudo firewall-cmd --list-all
+sudo firewall-cmd --list-all-zones
+sudo firewall-cmd --add-service=http
+sudo firewall-cmd --permanent --add-service=https
+sudo firewall-cmd --reload
+sudo firewall-cmd --add-port=8080/tcp
+sudo firewall-cmd --permanent --add-port=8080/tcp
+sudo firewall-cmd --permanent --remove-port=8080/
+sudo firewall-cmd --permanent --remove-service=http
+sudo firewall-cmd --query-port=22/tcp
+```
