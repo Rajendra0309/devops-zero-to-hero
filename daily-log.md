@@ -15,3 +15,13 @@
 - Inspected listening ports and active services
 - Practiced identifying processes bound to network ports
 - Examined firewall configuration for connectivity troubleshooting
+
+## Day 3
+- Started Bash scripting for DevOps automation
+- Learned exit codes and their role in CI/CD
+- Wrote system health check automation script
+- Created service status check script using systemctl
+- Enhanced Bash scripts with arguments and reusability
+- Implemented disk usage alert automation
+- Added logging to automation scripts
+- Learned Bash safety and error-handling practices
