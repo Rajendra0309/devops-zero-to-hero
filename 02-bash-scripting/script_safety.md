@@ -4,7 +4,7 @@
 - set -e  → Exit on error
 - set -u  → Treat unset variables as errors
 - set -o pipefail → Catch pipeline failures
+- trap → Cleanup on exit or failure
 
 ### DevOps Context
-Safety flags prevent silent failures
-in production automation and CI/CD pipelines.
+Safety flags prevent silent failures in production automation and CI/CD pipelines.

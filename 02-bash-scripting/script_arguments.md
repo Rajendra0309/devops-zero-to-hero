@@ -1,8 +1,7 @@
 ## Script Arguments in Bash (DevOps Perspective)
 
 ### What are Script Arguments?
-Script arguments allow passing values at runtime instead
-of hardcoding them inside scripts.
+Script arguments allow passing values at runtime instead of hardcoding them inside scripts.
 
 Example:
 ./script.sh nginx

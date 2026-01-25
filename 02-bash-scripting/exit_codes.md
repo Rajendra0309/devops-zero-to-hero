@@ -11,5 +11,4 @@ Every command returns an exit code:
 - Used for health checks
 
 ### DevOps Context
-Automation relies on exit codes to make decisions
-without human intervention.
+Automation relies on exit codes to make decisions without human intervention.
