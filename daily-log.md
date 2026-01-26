@@ -25,3 +25,9 @@
 - Implemented disk usage alert automation
 - Added logging to automation scripts
 - Learned Bash safety and error-handling practices
+
+## Day 4
+- Learned Docker fundamentals and container concepts
+- Wrote a Dockerfile to build custom images
+- Containerized existing Bash automation scripts
+- Built and ran Docker images locally
