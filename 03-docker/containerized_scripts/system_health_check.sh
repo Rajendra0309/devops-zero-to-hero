@@ -1,7 +1,9 @@
 #!/bin/bash
 set -euo pipefail
 
-LOGFILE="/tmp/system_health.log"
+echo "Application Environment: ${APP_ENV:-not set}"
+
+LOGFILE="/app/logs/system_health.log"
 
 {
 echo "===== SYSTEM HEALTH CHECK ====="

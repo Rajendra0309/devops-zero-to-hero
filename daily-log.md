@@ -31,3 +31,6 @@
 - Wrote a Dockerfile to build custom images
 - Containerized existing Bash automation scripts
 - Built and ran Docker images locally
+- Learned Docker volumes for data persistence
+- Used environment variables to configure containers
+- Understood port exposure and runtime configuration
