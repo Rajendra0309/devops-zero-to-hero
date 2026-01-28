@@ -1,0 +1,24 @@
+services:
+  automation:
+    image: devops-automation
+    container_name: automation-check
+    env_file:
+      - .env
+    volumes:
+      - automation-logs:/app/logs
+    command: ./system_health_check.sh
+    depends_on:
+      - web
+    profiles:
+      - automation
+
+  web:
+    image: nginx:latest
+    container_name: web-service
+    ports:
+      - "${WEB_PORT}:80"
+    profiles:
+      - web
+
+volumes:
+  automation-logs:

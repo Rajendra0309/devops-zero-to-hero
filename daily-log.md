@@ -34,3 +34,14 @@
 - Learned Docker volumes for data persistence
 - Used environment variables to configure containers
 - Understood port exposure and runtime configuration
+
+## Day 5
+- Learned Docker Compose fundamentals
+- Defined multi-container setup using docker-compose.yml
+- Ran automation and web services together
+- Used volumes, env variables, and networking in Compose
+- Used environment files with Docker Compose
+- Switched to named volumes for persistence
+- Controlled service startup order with depends_on
+- Scaled services using Docker Compose
+- Used profiles to run selective services
