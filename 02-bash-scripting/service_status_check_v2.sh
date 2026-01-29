@@ -8,6 +8,12 @@ fi
 
 SERVICE=$1
 
+# Skip systemctl checks in CI environments
+if [ "${CI:-false}" = "true" ]; then
+    echo "CI environment detected. Skipping systemctl check for '$SERVICE'."
+    exit 0
+fi
+
 systemctl is-active --quiet "$SERVICE"
 
 if [ $? -eq 0 ]; then
