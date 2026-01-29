@@ -1,0 +1,25 @@
+name: Devops CI Pipeline
+
+on:
+  push:
+    branches:
+      - main
+  pull_request:
+
+jobs:
+  bash-automation-checks:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Run system health script
+        run: |
+          chmod +x 02-bash-scripting/system_health_check_v2.sh
+          ./02-bash-scripting/system_health_check_v2.sh
+
+      - name: Run service status check (intentional failure)
+        run: |
+          chmod +x 02-bash-scripting/service_status_check_v2.sh
+          ./02-bash-scripting/service_status_check_v2.sh fake-service

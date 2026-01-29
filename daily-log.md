@@ -45,3 +45,9 @@
 - Controlled service startup order with depends_on
 - Scaled services using Docker Compose
 - Used profiles to run selective services
+
+## Day 6
+- Learned CI/CD fundamentals
+- Created first GitHub Actions workflow
+- Automated execution of Bash scripts using GitHub Actions
+- Observed CI pipeline failure and fixed it using exit codes
