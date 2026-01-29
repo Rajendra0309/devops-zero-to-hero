@@ -22,4 +22,4 @@ jobs:
       - name: Run service status check (intentional failure)
         run: |
           chmod +x 02-bash-scripting/service_status_check_v2.sh
-          ./02-bash-scripting/service_status_check_v2.sh fake-service
+          ./02-bash-scripting/service_status_check_v2.sh ssh
