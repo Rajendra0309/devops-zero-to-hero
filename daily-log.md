@@ -57,3 +57,5 @@
 - Built Docker images automatically using GitHub Actions
 - Ran containerized automation inside CI
 - Established multi-stage CI pipeline with job dependencies
+- Documented CI pipeline flow and Docker-related failure scenarios
+- Added notes on CI optimization awareness
