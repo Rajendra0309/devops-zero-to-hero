@@ -51,3 +51,9 @@
 - Created first GitHub Actions workflow
 - Automated execution of Bash scripts using GitHub Actions
 - Observed CI pipeline failure and fixed it using exit codes
+
+## Day 7
+- Integrated Docker image build into CI pipeline
+- Built Docker images automatically using GitHub Actions
+- Ran containerized automation inside CI
+- Established multi-stage CI pipeline with job dependencies
