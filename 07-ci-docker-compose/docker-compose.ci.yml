@@ -1,0 +1,11 @@
+services:
+  automation:
+    image: devops-automation
+    command: ./system_health_check.sh
+    depends_on:
+      - web
+
+  web:
+    image: nginx:latest
+    ports:
+      - "8080:80"

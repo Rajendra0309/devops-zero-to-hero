@@ -59,3 +59,9 @@
 - Established multi-stage CI pipeline with job dependencies
 - Documented CI pipeline flow and Docker-related failure scenarios
 - Added notes on CI optimization awareness
+
+## Day 8
+- Integrated Docker Compose into CI pipeline
+- Ran multi-container services inside GitHub Actions
+- Validated service availability using curl
+- Implemented clean startup and teardown of services in CI
