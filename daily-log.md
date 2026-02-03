@@ -65,3 +65,10 @@
 - Ran multi-container services inside GitHub Actions
 - Validated service availability using curl
 - Implemented clean startup and teardown of services in CI
+
+## Day 9
+- Optimized CI pipeline triggers using path-based execution
+- Added manual CI execution using workflow_dispatch
+- Implemented scheduled CI runs for periodic validation
+- Reduced unnecessary CI executions to minimize noise and cost
+- Documented CI trigger strategy and optimization decisions
