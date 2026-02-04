@@ -32,6 +32,25 @@ jobs:
       - name: Checkout repository
         uses: actions/checkout@v4
 
+      - name: Inject CI secret safely
+        env:
+          API_KEY: ${{secrets.DUMMY_API_KEY}}
+        run: |
+          echo "Secret injected successfully"
+          echo "Secret length: ${#API_KEY}"
+
+      - name: Environment-specific behavior
+        env:
+          APP_ENV: staging
+        run: |
+          echo "Running CI for environment: $APP_ENV"
+
+          if [ "$APP_ENV" = "production" ]; then
+            echo "Production safeguards enabled"
+          else
+            echo "Non-production environment"
+          fi
+
       - name: Run system health script
         run: |
           chmod +x 02-bash-scripting/system_health_check_v2.sh
