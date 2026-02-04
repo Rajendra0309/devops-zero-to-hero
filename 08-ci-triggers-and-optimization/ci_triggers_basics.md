@@ -2,7 +2,7 @@
 
 ### Why CI Trigger Optimization Matters
 Running CI on every change does not scale.
-Unnecessary pipeline executions:
+Unnecessary pipeline executions can:
 - Waste compute resources
 - Increase CI noise
 - Slow down developer feedback
@@ -39,6 +39,16 @@ A scheduled trigger was added temporarily to:
 - Demonstrate cron-based pipelines
 
 The schedule can be tuned or disabled later to reduce noise once validation is complete.
+
+---
+
+### CI Cleanup & Optimization Decision
+
+Scheduled CI was added temporarily to validate periodic pipeline execution.
+
+After validation, it was intentionally disabled to reduce unnecessary CI runs and noise.
+
+This mirrors real-world CI lifecycle management.
 
 ---
 
