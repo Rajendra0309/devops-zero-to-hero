@@ -72,3 +72,10 @@
 - Implemented scheduled CI runs for periodic validation
 - Reduced unnecessary CI executions to minimize noise and cost
 - Documented CI trigger strategy and optimization decisions
+
+## Day 10
+- Learned secure handling of secrets in CI pipelines
+- Injected secrets safely using GitHub Actions secrets
+- Verified secret masking in CI logs
+- Implemented environment-based behavior in CI
+- Prepared CI pipeline for secure deployment workflows
