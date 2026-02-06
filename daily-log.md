@@ -84,3 +84,9 @@
 - Disabled scheduled CI after successful validation
 - Cleaned up CI triggers to reduce unnecessary executions
 - Documented CI optimization and lifecycle decisions
+
+## Day 11 (Part 2)
+- Learned Continuous Delivery fundamentals
+- Understood CI vs CD responsibilities
+- Studied controlled deployment and approval workflows
+- Prepared conceptual foundation for deployment pipelines
