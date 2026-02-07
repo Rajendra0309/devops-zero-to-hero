@@ -90,3 +90,14 @@
 - Understood CI vs CD responsibilities
 - Studied controlled deployment and approval workflows
 - Prepared conceptual foundation for deployment pipelines
+
+## Day 12
+- Learned Continuous Delivery (CD) fundamentals and the difference between CI and CD
+- Extended existing CI pipeline with a dedicated deployment stage
+- Implemented environment-aware deployment using GitHub Environments (staging)
+- Added a staging deployment job that runs only after all CI checks pass
+- Simulated deployment safely using Docker-based execution (no cloud dependency)
+- Understood manual approval capability in GitHub Environments and its limitations in personal/private repositories
+- Designed the pipeline to be approval-ready for real-world organizational setups
+- Documented controlled promotion from CI to CD without automatic production release
+- Verified manual approval gates using GitHub Environments by enabling required reviewers in a public repository
