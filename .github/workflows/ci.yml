@@ -120,3 +120,28 @@ jobs:
       - name: Deploy to staging (local Docker)
         run: |
           docker run --rm devops-automation:staging
+
+  deploy-ec2:
+    runs-on: ubuntu-latest
+    needs: deploy-staging
+    environment:
+      name: production
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Setup SSH
+        run: |
+          mkdir -p ~/.ssh
+          echo "${{ secrets.EC2_SSH_KEY }}" > ~/.ssh/id_ed25519
+          chmod 600 ~/.ssh/id_ed25519
+          ssh-keyscan -H ${{ secrets.EC2_HOST }} > ~/.ssh/known_hosts
+
+      - name: Deploy to EC2 via SSH
+        run: |
+          ssh ${{ secrets.EC2_USER }}@${{ secrets.EC2_HOST }} << 'EOF'
+            docker rm -f devops-app || true
+            docker pull nginx:latest
+            docker run -d --name devops-app -p 80:80 nginx
+          EOF
