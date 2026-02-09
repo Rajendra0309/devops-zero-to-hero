@@ -101,3 +101,13 @@
 - Designed the pipeline to be approval-ready for real-world organizational setups
 - Documented controlled promotion from CI to CD without automatic production release
 - Verified manual approval gates using GitHub Environments by enabling required reviewers in a public repository
+
+## Day 13
+- Started AWS Cloud DevOps phase
+- Set up AWS Free Tier account with billing safety awareness
+- Created and used IAM user instead of root for cloud operations
+- Launched Ubuntu EC2 instance in ap-south-1 region
+- Configured Security Groups with restricted SSH and public HTTP access
+- Connected to EC2 securely using SSH key pair
+- Installed Docker on EC2 to prepare cloud instance for containerized deployments
+- Documented EC2, IAM, and Security Group fundamentals from a DevOps perspective
