@@ -111,3 +111,11 @@
 - Connected to EC2 securely using SSH key pair
 - Installed Docker on EC2 to prepare cloud instance for containerized deployments
 - Documented EC2, IAM, and Security Group fundamentals from a DevOps perspective
+
+## Day 14
+- Connected GitHub Actions CI pipeline to AWS EC2 using SSH
+- Configured secure access using SSH keys and GitHub Secrets
+- Automated Docker container deployment to EC2 after CI success
+- Validated container runtime and service availability on cloud instance
+- Debugged cloud networking behavior including HTTP vs HTTPS access
+- Gained hands-on experience with real-world CI/CD cloud deployments
