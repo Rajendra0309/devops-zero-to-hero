@@ -119,3 +119,11 @@
 - Validated container runtime and service availability on cloud instance
 - Debugged cloud networking behavior including HTTP vs HTTPS access
 - Gained hands-on experience with real-world CI/CD cloud deployments
+
+## Day 15
+- Implemented Blue/Green deployment on AWS EC2
+- Ran parallel application versions using Docker containers
+- Configured host-level Nginx reverse proxy for traffic control
+- Performed zero-downtime traffic switching
+- Simulated production failure and executed instant rollback
+- Documented production-grade Continuous Delivery concepts
