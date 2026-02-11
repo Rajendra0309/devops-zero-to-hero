@@ -147,7 +147,7 @@ jobs:
             docker pull nginx:latest
             docker run -d \
               --name devops-app \
-              -p 80:80 \
+              -p 8080:80 \
               -e APP_SECRET="$APP_SECRET" \
               nginx
           EOF
