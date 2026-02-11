@@ -127,3 +127,12 @@
 - Performed zero-downtime traffic switching
 - Simulated production failure and executed instant rollback
 - Documented production-grade Continuous Delivery concepts
+
+## Day 16
+- Secured production deployment with HTTPS using Let’s Encrypt
+- Configured Nginx with valid TLS certificate and auto-renewal
+- Implemented HTTP to HTTPS redirection
+- Integrated secure secret injection from GitHub Actions to EC2
+- Resolved SSH variable expansion issue during secret propagation
+- Implemented environment separation (staging vs production)
+- Documented production hardening practices
