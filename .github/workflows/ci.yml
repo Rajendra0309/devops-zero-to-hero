@@ -139,9 +139,15 @@ jobs:
           ssh-keyscan -H ${{ secrets.EC2_HOST }} > ~/.ssh/known_hosts
 
       - name: Deploy to EC2 via SSH
+        env:
+            APP_SECRET: ${{ secrets.APP_SECRET }}
         run: |
           ssh ${{ secrets.EC2_USER }}@${{ secrets.EC2_HOST }} << 'EOF'
             docker rm -f devops-app || true
             docker pull nginx:latest
-            docker run -d --name devops-app -p 80:80 nginx
+            docker run -d \
+              --name devops-app \
+              -p 80:80 \
+              -e APP_SECRET="$APP_SECRET" \
+              nginx
           EOF
