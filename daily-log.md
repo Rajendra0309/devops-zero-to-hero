@@ -136,3 +136,12 @@
 - Resolved SSH variable expansion issue during secret propagation
 - Implemented environment separation (staging vs production)
 - Documented production hardening practices
+
+## Day 17
+- Installed and configured Minikube on Fedora
+- Deployed Nginx using Kubernetes Deployment
+- Observed self-healing behavior by killing PID 1 inside Pod
+- Created ClusterIP service for internal networking
+- Debugged Service failure due to label mismatch
+- Resolved endpoint issue by correcting selector labels
+- Understood Deployment → ReplicaSet → Pod relationship
