@@ -9,6 +9,16 @@ This module demonstrates:
 - Label-based service routing
 - Real-world debugging of service endpoint mismatch
 
+## Advanced Concepts Covered
+
+- Deployment scaling behavior
+- Rolling updates with ReplicaSets
+- Immutable Pod replacement
+- Rollout failure simulation
+- ImagePullBackOff handling
+- Built-in rollback mechanism
+- Revision history tracking
+
 ## Key Learning
 
 Kubernetes networking depends entirely on labels.

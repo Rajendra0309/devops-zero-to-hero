@@ -145,3 +145,13 @@
 - Debugged Service failure due to label mismatch
 - Resolved endpoint issue by correcting selector labels
 - Understood Deployment → ReplicaSet → Pod relationship
+
+## Day 18
+- Scaled Kubernetes Deployment dynamically
+- Observed ReplicaSet adjustments during scaling
+- Performed rolling update by modifying container image
+- Observed gradual Pod replacement behavior
+- Simulated broken image deployment (ErrImagePull / ImagePullBackOff)
+- Performed rollback using rollout undo
+- Inspected Deployment revision history
+- Understood immutable infrastructure behavior in Kubernetes
