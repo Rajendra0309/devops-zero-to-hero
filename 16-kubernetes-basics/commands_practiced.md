@@ -42,4 +42,24 @@ kubectl get endpoints
 
 # Testing Internal DNS
 kubectl exec -it <pod-name> -- curl http://nginx-clusterip
+
+# Probes & Resource Testing
+kubectl apply -f nginx-probe.yaml
+kubectl describe pod <pod-name>
+kubectl get endpoints <service-name>
+kubectl rollout history deployment nginx-deploy
+kubectl rollout undo deployment nginx-deploy
+
+# Failure Debugging
+kubectl describe pod <pod-name> | grep -i reason
+kubectl get events --sort-by=.metadata.creationTimestamp
+
+# Resource Enforcement Testing
+kubectl apply -f busybox-memory-test.yaml
+kubectl describe pod <busybox-pod>
+kubectl get pods -o wide
+
+# Scheduler Behavior
+kubectl apply -f high-cpu-request.yaml
+kubectl describe pod <pending-pod>
 ```
