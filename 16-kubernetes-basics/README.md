@@ -29,6 +29,10 @@ using Deployments and Services with real failure simulations.
 - Resource requests & limits
 - OOMKill enforcement testing
 - Scheduler behavior under CPU constraints
+- ConfigMaps & Secrets
+- Volume-based configuration
+- Immutable config patterns
+- Checksum annotation rollout strategy
 
 ---
 

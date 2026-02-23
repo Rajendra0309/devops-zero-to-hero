@@ -62,4 +62,20 @@ kubectl get pods -o wide
 # Scheduler Behavior
 kubectl apply -f high-cpu-request.yaml
 kubectl describe pod <pending-pod>
+
+# ConfigMaps
+kubectl create configmap app-config --from-literal=KEY=value
+kubectl describe configmap app-config
+kubectl edit configmap app-config
+
+# Secrets
+kubectl create secret generic app-secret --from-literal=KEY=value
+kubectl describe secret app-secret
+
+# Volume Verification
+kubectl exec -it <pod> -- ls /etc/config
+kubectl exec -it <pod> -- cat /etc/config/file
+
+# Controlled Restart
+kubectl rollout restart deployment <name>
 ```
